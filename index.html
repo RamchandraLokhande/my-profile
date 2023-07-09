@@ -9,26 +9,37 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   <style>
-header{
-  background-color: dimgray; color: crimson;
+  header {
+  background-color: rgb(252, 196, 196); color: rgb(49, 45, 46);
+}
+nav {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a{
+  text-decoration: none;
+}
+.header-content {
+  margin-right: 20px;
 }
   </style>
 
-</head>
+</head> 
 <body>
     <fieldset>
     <h2>My Profile Details</h2>
     <br>
     <header>
-    <i class="fa fa-user" aria-hidden="true"> &nbsp; Ramchandra Lokhande</i>&nbsp; &nbsp;&nbsp;
-    <i class="fa fa-phone-square" aria-hidden="true"> &nbsp; +91-9730 9385 90</i>&nbsp; &nbsp;&nbsp;
-    <i class="fa fa-envelope" aria-hidden="true">&nbsp; ramchandralokhande88@gmail.com</i>
+    <i class="fa fa-user" aria-hidden="true">  <span class="header-content">Ramchandra Lokhande</span></i>
+    <i class="fa fa-phone-square" aria-hidden="true"> <span class="header-content">+91-9730 9385 90</span> </i>
+    <i class="fa fa-envelope" aria-hidden="true"> <span class="header-content"> ramchandralokhande88@gmail.com</span> </i>
+   <a href="f:\React Js\HTML\Assets\Resume.pdf"> <button> <i class="fa fa-download" aria-hidden="true"><span class="header-content"> Download CV</span> </i></button></a>
   </header>
     <br>
 
     <br>
     <nav>
-    <a href="home.html" target="my frame">HOME</a>&nbsp; &nbsp;&nbsp;
+    <a href="home.html" target="my frame">Home</a>&nbsp; &nbsp;&nbsp;
     <a href="techStack.html" target="my frame">TECH STACK</a>&nbsp; &nbsp;&nbsp;
     <a href="projectDetails.html" target="my frame">PROJECT</a>&nbsp; &nbsp;&nbsp;
     <a href="educationDetails.html" target="my frame">EDUCATION</a>&nbsp; &nbsp;&nbsp;
@@ -36,7 +47,7 @@ header{
   </nav>
     <br>
     <br>
-    <iframe width="1000px" height="800px" name="my frame"></iframe>
+    <iframe width="1000px" height="800px" src="home.html" name="my frame"></iframe>
     </fieldset>
 </body>
 </html>
