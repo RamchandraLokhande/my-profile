@@ -6,40 +6,50 @@
     <title>Document</title>
     <style>
         table,tr,th,td {
-            border: 2px Solid rgb(36, 155, 160);
+            border: 2px solid red;
             border-collapse: collapse;
+        }
+        .academic  {
+            background-color: burlywood; color: red;
+            word-spacing: 3px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px black;
+        }
+        .table {
+            padding: 30px;
+            margin: 20px;
         }
     </style>
 </head>
 <body>
-    <h2>Academic Details</h2>
-    <table>
+    <h2 class="academic">Academic Details</h2>
+    <table >
         <th>
-            <tr>
-                <th>Sr.No.</th>
-                <th>Academic</th>
-                <th>College Name</th>
-                <th>Univrsity/Board</th>
+            <tr >
+                <th class="table">Sr.No.</th>
+                <th class="table">Academic</th>
+                <th class="table">College Name</th>
+                <th class="table">Univrsity/Board</th>
             </tr>
         </th>
         <tb>
-            <tr>
-                <td>1</td>
-                <td>Graduation</td>
-                <td>Jspm's ICOER</td>
-                <td>Pune University</td>
+            <tr >
+                <td class="table">1</td>
+                <td class="table">Graduation</td>
+                <td class="table">Jspm's ICOER</td>
+                <td class="table">Pune University</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Diploma</td>
-                <td>Goveronment Polytechnic Solapur</td>
-                <td>MSBTE</td>
+                <td class="table">2</td>
+                <td class="table">Diploma</td>
+                <td class="table">Goveronment Polytechnic Solapur</td>
+                <td class="table">MSBTE</td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>SSC</td>
-                <td>Javahar Vidyalaya Gherdi</td>
-                <td>Pune Board</td>
+                <td class="table">3</td>
+                <td class="table">SSC</td>
+                <td class="table">Javahar Vidyalaya Gherdi</td>
+                <td class="table">Pune Board</td>
             </tr>
         </tb>
     </table>
