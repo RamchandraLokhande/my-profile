@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&family=Signika+Negative&family=Sofia&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(93, 111, 139);
+        }
+        Input [type="text"], [type="email"],[type="text"], [type="number"] {
+            width: 200px;
+            border-radius: 10px;
+            font-weight: bolder;
+            background-color: rgb(207, 107, 137);
+            font-family: 'Roboto', sans-serif;
+        }
+        input [type="file"],[type="file"],[type="date"] {
+            width: 200px;
+            border-radius: 5px;
+            font-weight: bolder;
+            border: 2px;
+            background-color: rgb(207, 107, 137);
+            font-family: 'Roboto', sans-serif;
+           
+        }
+        select,textarea, #value, #password {
+            width: 200px;
+            border-radius: 5px;
+            font-weight: bolder;
+            border: 2px;
+            background-color: rgb(207, 107, 137);
+            font-family: 'Roboto', sans-serif;
+        }
+        #submit, #reset  {
+            padding: 10px;
+            width: 200px;
+            border-radius: 10px;
+            font-weight: bolder;
+            border: 2px;
+            background-color: rgb(177, 15, 64);
+            font-family: 'Roboto', sans-serif;
+        }
+      .label {
+            color: red;
+        }
+            
+    </style>
+</head>
+<body>
+   <table>
+    <thead>
+    <h2>Employee Application Form </h2>
+    </thead>
+    <tbody>
+        <form>
+            <table>
+                <tr>
+                    <td><label>Full Name</label></td> 
+                    <td><Input type="text" maxlength="40"
+                        autofocus 
+                        required></Input> 
+                    </td> 
+                    <tr>
+                        <td>
+                            <label>Email Adress</label>
+                         </td>
+                         <td>
+                            <input type="email"
+                            placeholder="Ex.abc@gmail.com">
+                         </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Password</label>
+                        </td>
+                        <td>
+                           <input type="password" id="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Contact Number</label>
+                        </td>
+                        <td>
+                            <input type="number" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Profile Photo</label>
+                        </td>
+                        <td>
+                            <Input type="file"></Input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Date of Birth
+                            </label>
+                        </td>
+                        <td>
+                            <Input type="date"></Input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label> Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="Gender"><label class="label">Male</label>
+                            <input type="radio" name="Gender"><label class="label">Female</label>
+                            <input type="radio" name="gender"><label class="label"class="label">Transgender</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Marital Status</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="Marital"><label class="label">Married</label>
+                            <input type="radio" name="Marital"><label class="label">Unmarried</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Known Tools & Technology</label>
+                        </td>
+                        <td>
+                            <input type="checkbox"><label class="label">Angular</label>
+                            <input type="checkbox"><label class="label">React</label>
+                            <input type="checkbox"><label class="label">Python</label>
+                            <input type="checkbox"><label class="label">Java</label>
+                            <input type="checkbox"><label class="label">Jenkin</label>
+                            <input type="checkbox"><label class="label"class="label">GIT</label>
+                            <input type="checkbox"><label class="label">Database</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Designation</label>
+                        </td>
+                        <td>
+                            <select>
+                                <Option value="UI Devloper"> UI Devloper</Option>
+                                <Option value="Backend Devloper"> Backend Devloper</Option>
+                                <Option value="Full Stack Devloper"> Full Stack Devloper</Option>
+                                <Option value="DevOps Engineer"> DevOps Engineer</Option>
+                                <Option value="Tester"> Tester</Option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Name Of Country</label>
+                        </td>
+                        <td>
+                            <input value="India" readonly id="value">  </input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Present Address</label>
+                        </td>
+                        <td>
+                            <textarea  rows="7"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" id="submit"> Submit</button>
+                        </td>
+                        <td>
+                            <button type="reset" id="reset">Reset</button>
+                        </td>
+                    </tr>
+                </tbody>
+   </table>
+    </form>
+</body>
+</html>
