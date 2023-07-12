@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <style>
+        label,#Discount, h2{
+                      color: cadetblue;
+        }
+       #number, input[value="Percentage"] {
+            color: cadetblue;
+            padding-left: 50px;
+            border-radius: 5px;
+            
+        }
+        .calculate {
+            color: burlywood;
+            background-color: #4caf50;
+            padding: 10px 100px; 
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Discount Calculator</h2>
+    <table>
+        <tbody>
+          <tr> 
+   <label>Bill Amount</label></span>
+     <p><input id="number" type="number"></p>
+    </tr> 
+    <tr>
+       <label>Discount Percentage</label> 
+        <p><input value="Percentage"></p>
+    </tr>
+   <tr>
+    <button class="calculate" type="calculate" id="calculate"> Calculate</button>
+   </tr>
+   <p id="Discount">Total Discount Amount</p>
+</tbody>
+</table>
+</body>
+</html>
