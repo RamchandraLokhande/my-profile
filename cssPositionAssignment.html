@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+         body {
+            background-color: rgb(153, 239, 247);
+            
+         }
+        li{list-style-type: none;
+        } 
+        .li1::before {
+            content: "✔️";
+        }
+        #domain {
+            color: blue;
+          content: "❌";
+        }
+        .li2::before {
+            content: "❌";
+        }
+        .div3 ul li::before{
+            content: "✔️";
+        }
+       
+        .div1 {
+            display: inline-block;
+            border: 1px solid white;
+           background-color: azure;
+           border-radius: 10px;
+           position: relative;
+           left: 50px;
+           top: 100px;
+        }
+        .div2 {
+            display: inline-block;
+          border: 1px solid white;
+           background-color: azure;
+           border-radius: 10px;
+           position: relative;
+           left: 100px;
+           top: 30px;
+        }
+        .div3 {
+            display: inline-block;
+            border: 1px solid white;
+           background-color: azure;
+           border-radius: 10px;
+           position: relative;
+           left: 150px;
+           top: 100px;
+        }
+        .div1 h2, .div3 h2 {
+            background-color: rgb(21, 148, 95);
+            /* padding-left: 40px; */
+            padding: 10px 0px 10px 40px;
+            margin: 0px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        
+        }
+        .div2 h2 {
+            background-color: rgb(207, 25, 19);
+            padding: 10px 0px 10px 40px;
+            margin: 0px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        h1 {
+            padding-left: 50px;
+            margin-bottom: 5px;
+        }
+        li {
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+        button {
+            padding: 5px 50px 5px 50px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            background-color: rgb(21, 148, 95);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h2>Basic</h2>
+        <ul>
+            <li class="li1">Hosting</li>
+            <li class="li2">Domain</li>
+            <li class="li1">1 GB Space</li>
+            <li class="li2">Free SSL</li>
+            <li class="li1">1 Website Host</li>
+        </ul>
+        <h1>$5</h1>
+        <button type="button" id="Buy Now">Buy Now</button>
+    </div>
+    <div class="div2">
+        <h2>Standard</h2>
+        <ul>
+            <li class="li1">Hosting</li>
+            <li class="li1">Domain</li>
+            <li class="li1">10 GB Space</li>
+            <li class="li2">Free SSL</li>
+            <li class="li1">4 Website Host</li>
+        </ul>
+        <h1>$10</h1>
+        <button type="button" id="Buy Now">Buy Now</button>
+    </div>
+    <div class="div3">
+        <h2>Standard</h2>
+        <ul>
+            <li>Hosting</li>
+            <li>Domain</li>
+            <li>10 GB Space</li>
+            <li>Free SSL</li>
+            <li>4 Website Host</li>
+        </ul>
+        <h1>$20</h1>
+        <button type="button" id="Buy Now">Buy Now</button>
+    </div>
+</body>
+</html>
